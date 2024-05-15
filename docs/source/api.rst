@@ -3,8 +3,8 @@
 Rubin Rocks API
 ===============
 
-Retrieve stability borders for a circumbinary planet
------------------------------------------------------------
+Retrieve dynamical information of a near-Earth Object
+-----------------------------------------------------
 
 .. http:get:: /residencetime/
    :noindex:
@@ -49,13 +49,13 @@ Retrieve stability borders for a circumbinary planet
     ]
 
 
-Retrieve a slice of the NEO model
----------------------------------
+Retrieve a slice of data from a near-Earth object model
+-------------------------------------------------------
 
 .. http:get:: /residencetimeslice/
     :noindex:
 
-    Returns gridpoints of a slice through the NEO model
+    Return gridpoints of a slice through the NEO model for a constant semimajor axis, eccentricity or inclination 
 
     :query a: (*required*) -- Semimajor axis [au]
     :query e: (*required*) -- Orbital eccentricity [0-1)

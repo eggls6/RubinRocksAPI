@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Exostab 2.0'
+project = 'Rubin Rocks'
 copyright = '2024 UIUC'
-author = 'Siegfried Eggl'
+author = 'Samuel Cornwall, Siegfried Eggl, Sarah Greenstreet'
 
 release = '0.1'
 version = '0.1.0'

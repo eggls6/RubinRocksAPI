@@ -1,5 +1,5 @@
 Welcome to Rubin Rocks API Documentation
-===================================
+========================================
 
 **Rubin Rocks**  is an online service intended to simplify dynamical studies for near-Earth asteroids.
 Instead of solving the gravitational three body problem over and over, Rubin Rocks pulls existing results from data-base of 
