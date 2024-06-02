@@ -1,12 +1,14 @@
-About Rubin Rocks API
-======================
-Rubin Rocks Application  
-An :ref:`API` query returns dynamical information for near-Earth Objects with a specific set of orbital parameters.
-The results closest to the orbial element set provided by the user are returned. 
+About Rubin Rocks
+==================
+Rubin Rocks is an :ref:`API` service that returns dynamical information for near-Earth Objects given a user defined
+set of orbital parameters.
+
 
 Dynamical Model
 ----------------
+
 #. Greenstreet et al. (2012) / NEOSSat1
+
 This model contains the probability distribution of residence time held
 by near-Earth object like test-particles in (a,e,i) cells of size (0.05 au,0.02, 2.0 degrees), respectively, 
 orinnating in the five source regions, i.e. Intermediate Mars Crosser (IMC) population, Jupiter Family Comet (JFC) population, The 3:1 mean-motion resonance with Jupiter, Outer Main-Belt (OMB) population,
@@ -24,6 +26,7 @@ For details see Greenstreet at al. (2012).
 API Output
 ------------
 Estimated probabilities that a given near-Earth Object comes from a particular source region:
+
 * IMC: Intermediate Mars Crosser (IMC) population,	
 * JFC: Jupiter Family Comet (JFC) population,
 * MMR3to1: The 3:1 mean-motion resonance with Jupiter,
@@ -32,6 +35,7 @@ Estimated probabilities that a given near-Earth Object comes from a particular s
 * residence_time: residence time probability distribution R_NEO (a,e,i),
 * cumulative_residence_time: cumulative residence time.	
 
+The closest database entries corresponding to the orbial element set provided by the user are returned. 
 
 
 References
