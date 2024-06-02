@@ -1,7 +1,8 @@
 Acknowledgements
 ================
 
-This effort is a collaboration between the University of Illinois Urbana-Champaign (UIUC) and the University of Washington (UW) and was sponosred by the National Science Foundation under the grant #AST...
+Rubin Rocks is a collaboration between the University of Illinois Urbana-Champaign (UIUC) and the University of Washington (UW). The authors acknowledge funding through
+the National Science Foundation grant #AST 23-07570.
 
 .. image:: _images/NSF_logo.png
     :width: 200
