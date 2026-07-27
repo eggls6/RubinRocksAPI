@@ -4,47 +4,207 @@
 
 {% if pagename == "index" %}
 
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+
+.landing {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.landing-video {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -3;
+}
+
+.landing-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(3,14,28,.40),
+            rgba(3,14,28,.70));
+
+    z-index: -2;
+}
+
+.landing-content {
+
+    text-align: center;
+
+    color: white;
+
+    padding: 2rem;
+
+    max-width: 900px;
+}
+
+.landing-content h1 {
+
+    border: none;
+
+    margin: 0;
+
+    color: #00a6b5;
+
+    font-size: clamp(4rem,8vw,7rem);
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    text-shadow:
+        0 0 25px rgba(0,180,180,.35);
+
+    opacity: 0;
+
+    animation: fadeUp 2s forwards;
+}
+
+.landing-content p {
+
+    color: white;
+
+    font-size: clamp(1.3rem,2vw,2rem);
+
+    font-weight: 300;
+
+    line-height: 1.5;
+
+    margin-top: 1rem;
+
+    opacity: 0;
+
+    animation: fadeUp 2s .8s forwards;
+}
+
+.landing-button {
+
+    display: inline-block;
+
+    margin-top: 3rem;
+
+    padding: 1rem 2.8rem;
+
+    border: 2px solid white;
+
+    border-radius: 40px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    letter-spacing: .08em;
+
+    transition: .3s;
+
+    opacity: 0;
+
+    animation: fadeUp 2s 1.6s forwards;
+}
+
+.landing-button:hover {
+
+    background: white;
+
+    color: #103B60;
+}
+
+#documentation {
+
+    position: relative;
+
+    background: white;
+
+    z-index: 5;
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: none;
+
+    }
+
+}
+
+</style>
+
 <div class="landing">
 
-  <video class="landing-video"
+    <video class="landing-video"
+           autoplay
+           muted
+           loop
+           playsinline>
 
-         autoplay
+        <source src="{{ pathto('_static/hero.mp4', 1) }}"
+                type="video/mp4">
 
-         muted
+    </video>
 
-         loop
+    <div class="landing-overlay"></div>
 
-         playsinline>
+    <div class="landing-content">
 
-      <source src="{{ pathto('_static/hero.mp4', 1) }}"
+        <h1>RUBIN ROCKS</h1>
 
-              type="video/mp4">
+        <p>
 
-  </video>
+            Exploring the dynamical histories
+            of near-Earth Objects
 
-  <div class="landing-overlay"></div>
+        </p>
 
-  <div class="landing-content">
+        <a href="#documentation"
+           class="landing-button">
 
-      <h1>Rubin Rocks</h1>
+            Documentation
 
-      <p>
+        </a>
 
-          Exploring the dynamical histories
-
-          of near-Earth Objects
-
-      </p>
-
-      <a href="#documentation"
-
-         class="landing-button">
-
-         Documentation
-
-      </a>
-
-  </div>
+    </div>
 
 </div>
 
@@ -56,52 +216,33 @@
 
 {% else %}
 
-<div id="documentation">
-
 {{ super() }}
-
-</div>
 
 {% endif %}
 
 <script>
 
-document.querySelector(".landing-button")
+document.addEventListener("DOMContentLoaded", function(){
 
-.addEventListener("click",function(e){
+    const button = document.querySelector(".landing-button");
 
-    e.preventDefault();
+    if(button){
 
-    document
+        button.addEventListener("click", function(e){
 
-        .querySelector("#documentation")
+            e.preventDefault();
 
-        .scrollIntoView({
-
-            behavior:"smooth"
+            document.querySelector("#documentation")
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
 
         });
 
-});
-
-
-window.addEventListener("scroll",function(){
-
-    const show = window.scrollY > window.innerHeight*0.7;
-
-    document.querySelector(".sidebar-drawer")
-
-        .style.opacity = show ? 1 : 0;
-
-    document.querySelector(".toc-drawer")
-
-        .style.opacity = show ? 1 : 0;
-
-    document.querySelector(".mobile-header")
-
-        .style.opacity = show ? 1 : 0;
+    }
 
 });
+
 </script>
 
 {% endblock %}
