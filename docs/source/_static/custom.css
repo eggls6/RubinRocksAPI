@@ -1,0 +1,291 @@
+/* ==========================================================================
+   Rubin-inspired Furo Theme
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Light Theme
+   -------------------------------------------------------------------------- */
+
+:root {
+
+    /* Layout */
+    --content-width: 980px;
+    --sidebar-width: 290px;
+
+    /* Brand colors */
+    --color-brand-primary: #1565a9;
+    --color-brand-content: #1c7cc7;
+
+    /* Text */
+    --color-foreground-primary: #203040;
+    --color-foreground-secondary: #556575;
+
+    /* Backgrounds */
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f5f8fb;
+    --color-background-border: #dbe5ef;
+
+    /* Cards */
+    --color-card-background: #fbfcfd;
+    --color-card-border: #d9e2ea;
+
+    /* Admonitions */
+    --color-admonition-background: #f3f8fc;
+
+    /* Code */
+    --color-code-background: #f6f8fa;
+    --color-code-foreground: #213547;
+
+    /* Links */
+    --color-link: var(--color-brand-primary);
+    --color-link-hover: #0f4f88;
+}
+
+
+/* --------------------------------------------------------------------------
+   Dark Theme
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] {
+
+    --color-brand-primary: #58b7ff;
+    --color-brand-content: #7cc8ff;
+
+    --color-foreground-primary: #e6edf5;
+    --color-foreground-secondary: #b4c2cf;
+
+    --color-background-primary: #0e1722;
+    --color-background-secondary: #152331;
+
+    --color-background-border: #26384b;
+
+    --color-card-background: #152331;
+    --color-card-border: #27435f;
+
+    --color-admonition-background: #162736;
+
+    --color-code-background: #111c29;
+    --color-code-foreground: #dbe7f3;
+
+    --color-link: #74c8ff;
+    --color-link-hover: #a8ddff;
+}
+
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+
+body {
+
+    font-family:
+        "Inter",
+        "Segoe UI",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    letter-spacing: .01em;
+}
+
+h1 {
+
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0b2f4a;
+
+    border-bottom: 2px solid #dbe5ef;
+    padding-bottom: .35rem;
+}
+
+h2 {
+
+    margin-top: 2.5rem;
+
+    font-size: 1.8rem;
+
+    color: #0f4469;
+}
+
+h3 {
+
+    font-size: 1.35rem;
+
+    color: #1565a9;
+}
+
+
+/* Dark headings */
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+
+    color: #9fd8ff;
+}
+
+
+/* --------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+
+a {
+
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* --------------------------------------------------------------------------
+   Sidebar
+   -------------------------------------------------------------------------- */
+
+.sidebar-brand {
+
+    font-weight: 700;
+
+    font-size: 1.2rem;
+}
+
+.sidebar-tree {
+
+    font-size: .95rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
+
+table.docutils {
+
+    border-collapse: collapse;
+
+    font-size: .95rem;
+
+    width: 100%;
+}
+
+table.docutils th {
+
+    background: #0f4469;
+
+    color: white;
+
+    font-weight: 600;
+}
+
+[data-theme="dark"] table.docutils th {
+
+    background: #214a70;
+}
+
+table.docutils td,
+table.docutils th {
+
+    padding: .6rem .8rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   Code blocks
+   -------------------------------------------------------------------------- */
+
+.highlight pre {
+
+    font-size: .92rem;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--color-background-border);
+
+    padding: 1rem;
+}
+
+code {
+
+    font-family:
+        "JetBrains Mono",
+        "Fira Code",
+        monospace;
+
+    font-size: .92em;
+}
+
+
+/* --------------------------------------------------------------------------
+   sphinx-design tabs
+   -------------------------------------------------------------------------- */
+
+.sd-tab-set {
+
+    margin-top: 1.5rem;
+}
+
+.sd-tab-label {
+
+    font-weight: 600;
+
+    font-size: .95rem;
+
+    padding: .6rem 1rem;
+}
+
+.sd-tab-content {
+
+    border-radius: 0 0 8px 8px;
+
+    padding: 1rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   sphinx-design cards
+   -------------------------------------------------------------------------- */
+
+.sd-card {
+
+    border-radius: 10px;
+
+    border: 1px solid var(--color-card-border);
+
+    box-shadow: 0 1px 3px rgba(0,0,0,.05);
+
+    transition: .2s ease;
+}
+
+.sd-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+
+/* --------------------------------------------------------------------------
+   Admonitions
+   -------------------------------------------------------------------------- */
+
+.admonition {
+
+    border-radius: 8px;
+}
+
+
+/* --------------------------------------------------------------------------
+   Search
+   -------------------------------------------------------------------------- */
+
+.sidebar-search-container input {
+
+    border-radius: 20px;
+}
