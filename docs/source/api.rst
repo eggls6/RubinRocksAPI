@@ -20,7 +20,7 @@ Retrieve dynamical information of a near-Earth Object
 
         .. tab-item:: Browser
 
-            .. code-block:: none  
+             .. code-block:: text  
 
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_from_id/?designation=2026%20AB1 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_from_id/?designation=2026%20AB1>`_
 
@@ -88,7 +88,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit
 
         .. tab-item:: Browser
             
-            .. code-block:: none
+            .. code-block:: text 
 
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45>`_
 
@@ -147,7 +147,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Uncertainty
 
         .. tab-item:: Browser 
 
-            .. code-block:: none
+            .. code-block:: text 
 
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_sigma/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_sigma/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2>`_
 
@@ -209,7 +209,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Covariance
 
         .. tab-item:: Browser
             
-            .. code-block:: none
+            .. code-block:: text 
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1>`_
 
         .. tab-item:: Python
@@ -262,7 +262,7 @@ Retrieve a slice of data from a near-Earth object model
     .. tab-set::
         .. tab-item:: Browser 
             
-            .. code-block:: none
+            .. code-block:: text 
 
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_slice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_slice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table>`_
 
