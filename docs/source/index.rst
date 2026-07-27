@@ -8,7 +8,7 @@ presents results a *simple* and *intuitive* API.
 
 Check out the :ref:`API` section for further information.
 
-A `web-based tool <https://apexgroup.web.illinois.edu/rubinrocks/html/test.html>`_ is accessible through the 
+A `web-based tool <http://apexgroup.web.illinois.edu/rubinrocks2/html/rubinrocks2>`_ is accessible through the 
 `Astrodynamics and Planetary Exploration (APEX) <https://apexgroup.web.illinois.edu/>`_ group at UIUC in collaboration with the DiRAC institute at the University of Washington. 
 
 .. note::
