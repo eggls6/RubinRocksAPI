@@ -1,32 +1,35 @@
-.. raw:: html
+.. .. raw:: html
 
-   <section class="hero">
+..    <section class="hero">
 
-     <video autoplay muted loop playsinline class="hero-video">
+..      <video autoplay muted loop playsinline class="hero-video">
 
-       <source src="_static/hero.mp4" type="video/mp4">
+..        <source src="_static/hero.mp4" type="video/mp4">
 
-     </video>
+..      </video>
 
-     <div class="hero-overlay"></div>
+..      <div class="hero-overlay"></div>
 
-     <div class="hero-content">
+..      <div class="hero-content">
 
-       <h1>Rubin Rocks</h1>
+..        <h1>Rubin Rocks</h1>
 
-       <p>
+..        <p>
 
-       Exploring dynamical histories of near-Earth Objects.
+..        Exploring dynamical histories of near-Earth Objects.
 
-       </p>
+..        </p>
 
-       <a class="hero-button" href="api.html">
+..        <a class="hero-button" href="api.html">
 
-          Get Started
+..           Get Started
 
-       </a>
+..        </a>
 
-     </div>
+..      </div>
+
+:index-template: landing
+:orphan:
 
 Welcome to Rubin Rocks
 ========================================

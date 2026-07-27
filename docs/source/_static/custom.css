@@ -287,6 +287,29 @@ body[data-theme="dark"] .sd-tab-content {
     border-color: var(--rubin85);
 }
 
+/* ===========================================================
+
+   Landing Page
+
+   =========================================================== */
+
+body[data-page="index"] .sidebar-drawer {
+
+    display: none;
+
+}
+
+body[data-page="index"] .toc-drawer {
+
+    display: none;
+
+}
+
+body[data-page="index"] .mobile-header {
+
+    display: none;
+
+}
 
 /* ===========================================================
 
