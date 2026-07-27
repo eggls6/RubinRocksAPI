@@ -1,6 +1,6 @@
 About Rubin Rocks
 ==================
-Rubin Rocks is an :ref:`API` service that returns dynamical information for near-Earth Objects given a user defined
+Rubin Rocks is an API service that returns dynamical information for near-Earth Objects given a user defined
 set of orbital parameters.
 
 
