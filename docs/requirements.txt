@@ -4,8 +4,6 @@ sphinx>=8.2
 
 furo>=2025.7
 
-sphinx-copybutton
-
 sphinx-design
 
 sphinxcontrib-mermaid
