@@ -296,6 +296,13 @@ table.docutils td {
   Dark mode
 ---------------------------------------------------------------------------*/
 
+body[data-theme="dark"] {
+
+    --color-background-primary: #000000;
+    --color-background-secondary: #050505;
+
+}
+
 body[data-theme="dark"] h1 {
 
     color: var(--rubin50);
