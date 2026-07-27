@@ -5,3 +5,5 @@ sphinx>=7.2
 furo
 
 sphinx-code-tabs
+
+sphinx-tabs
