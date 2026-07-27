@@ -110,14 +110,24 @@ h3 {
 
 a {
 
-    color: var(--rubin50);
+    color: var(--rubin80);
 }
 
 a:hover {
 
-    color: var(--rubin90);
+    color: var(--rubin60);
 }
 
+
+a.reference.internal {
+
+    color: var(--rubin80);
+}
+
+a.reference.internal:hover {
+
+    color: var(--rubin60);
+}
 /*---------------------------------------------------------------------------
   Search box
 ---------------------------------------------------------------------------*/
