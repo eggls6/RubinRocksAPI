@@ -16,7 +16,10 @@ Retrieve dynamical information of a near-Earth Object
 **Example Request**
     .. tab-set::
 
-        .. tab-item::  Browser
+        .. tab-item:: Browser
+
+            .. code-block:: html  
+
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_from_id/?designation=2026%20AB1 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_from_id/?designation=2026%20AB1>`_
 
         .. tab-item:: Python
@@ -64,7 +67,10 @@ Retrieve dynamical information of a near-Earth Object by Orbit
 **Example Request**
     .. tabs::
 
-        .. tab-item::  Browser
+        .. tab-item:: Browser
+            
+            .. code-block:: html
+
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45>`_
 
         .. tab-item:: Python
@@ -117,7 +123,10 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Uncertainty
 **Example Request**
     .. tabs::
 
-        .. tab-item::  Browser
+        .. tab-item:: Browser 
+
+            .. code-block:: html
+
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_sigma/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_sigma/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2>`_
 
         .. tab-item:: Python
@@ -170,7 +179,9 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Covariance
 **Example Request**
     .. tabs::
 
-        .. tab-item::  Browser
+        .. tab-item:: Browser
+            
+            .. code-block:: html
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1>`_
 
         .. tab-item:: Python
@@ -221,7 +232,10 @@ Retrieve a slice of data from a near-Earth object model
 
 **Example Request**
     .. tabs::
-        .. tab-item::  Browser
+        .. tab-item:: Browser 
+            
+            .. code-block:: html
+
             `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_slice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_slice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table>`_
 
         .. tab-item:: Python
