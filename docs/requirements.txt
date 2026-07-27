@@ -1,4 +1,13 @@
-sphinx
-sphinx-rtd-theme
-sphinx-code-tabs
 setuptools
+
+sphinx>=8.2
+
+furo>=2025.7
+
+sphinx-copybutton
+
+sphinx-design
+
+sphinxcontrib-mermaid
+
+sphinx-code-tabs
