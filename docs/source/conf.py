@@ -46,6 +46,8 @@ extensions = [
 
     "sphinx_code_tabs",
 
+    "sphinx_tabs.tabs",
+
 ]
 
 templates_path = ["_templates"]
