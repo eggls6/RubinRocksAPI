@@ -46,7 +46,7 @@ extensions = [
 
     "sphinx_code_tabs",
 
-    "sphinx-tabs",
+    "sphinx_tabs.tabs",
 
 ]
 

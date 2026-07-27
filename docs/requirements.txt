@@ -6,4 +6,4 @@ furo
 
 sphinx-code-tabs
 
-sphinx-tabs
+sphinx-tabs>=3.4.5
