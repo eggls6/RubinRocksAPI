@@ -126,7 +126,7 @@ html_theme = "furo"
 
 html_title = project
 
-html_static_path = ["_static"]
+html_static_path = ["docs/source/_static"]
 
 html_css_files = [
 

@@ -3,7 +3,7 @@
 Rubin Rocks API
 ===============
 This page contains a list of various Rubin Rocks API endpoints that can be used to extract dynamical information for near-Earth objects.
-
+The API endpoints simply follow the main URL `http://apexgroup.web.illinois.edu/rubinrocks2 <http://apexgroup.web.illinois.edu/rubinrocks2>`_ .
 
 Retrieve dynamical information of a near-Earth Object
 -----------------------------------------------------
