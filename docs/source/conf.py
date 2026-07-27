@@ -44,8 +44,6 @@ extensions = [
 
     # Third-party
 
-    "sphinxcontrib.mermaid",
-
     "sphinx_code_tabs",
 
 ]
@@ -175,9 +173,9 @@ html_context = {
 
 # -----------------------------------------------------------------------------
 
-copybutton_prompt_text = r">>> |\.\.\. |\$ "
+# copybutton_prompt_text = r">>> |\.\.\. |\$ "
 
-copybutton_prompt_is_regexp = True
+# copybutton_prompt_is_regexp = True
 
 # -----------------------------------------------------------------------------
 
@@ -185,7 +183,7 @@ copybutton_prompt_is_regexp = True
 
 # -----------------------------------------------------------------------------
 
-mermaid_version = "11.0.0"
+# mermaid_version = "11.0.0"
 
 # -----------------------------------------------------------------------------
 

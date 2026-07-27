@@ -4,6 +4,4 @@ sphinx>=7.2
 
 furo
 
-sphinxcontrib-mermaid
-
 sphinx-code-tabs
