@@ -2,18 +2,7 @@
 
 # -- Project information
 
-project = {
-
-    "name": "Rubin Rocks",
-
-    "repo": "https://github.com/eggls6/RubinRocksAPI",
-
-    "branch": "main",
-
-    "docs_dir": "docs/",
-
-}
-
+project = "Rubin Rocks"
 copyright = '2026 UIUC'
 author = 'Samuel Cornwall, Siegfried Eggl, Sarah Greenstreet, Dmitrii Vavilov'
 
