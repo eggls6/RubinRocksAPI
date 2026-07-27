@@ -97,6 +97,7 @@ h3 {
 .sidebar-brand-text {
 
     color: white !important;
+    padding: 1rem;
 }
 
 .sidebar-tree {
@@ -112,26 +113,41 @@ h3 {
 
 }
 
-.sidebar-tree a {
+.sidebar-tree {
 
-    font-size: 1.02rem;
+    font-family: Inter, sans-serif;
+
+    font-size: .97rem;
 
     font-weight: 500;
 
-    color: var(--rubin80);
-
     letter-spacing: .02em;
+
+}
+
+.sidebar-tree a {
+
+    color: var(--rubin60);
+
+    transition: .2s;
+
 }
 
 .sidebar-tree a:hover {
 
-    font-size: 1.02rem;
+    color: var(--rubin50);
 
-    font-weight: 500;
+    text-decoration: none;
 
-    color: var(--rubin60);
+    transform: translateX(3px);
 
-    letter-spacing: .02em;
+}
+
+.sidebar-tree .current > a {
+
+    color: white;
+
+    font-weight: 700;
 
 }
 
