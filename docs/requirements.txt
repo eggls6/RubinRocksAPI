@@ -1,6 +1,7 @@
 setuptools
 sphinx-design
 sphinxcontrib-mermaid
+sphinxcontrib-httpdomain
 furo
 sphinx>=7.2
 

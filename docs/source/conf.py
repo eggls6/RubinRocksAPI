@@ -36,7 +36,9 @@ extensions = [
     "sphinx_design",
 
     "sphinxcontrib.mermaid",
-]
+    
+    "sphinxcontrib.httpdomain",
+]    
 
 templates_path = ["_templates"]
 
