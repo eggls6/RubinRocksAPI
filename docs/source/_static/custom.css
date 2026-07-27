@@ -10,6 +10,7 @@
     --content-width: 1100px;
     --sidebar-width: 300px;
     --rubin10: #d9f7f6;
+    --rubin20: #b1f2ef;
     --rubin50: #00babc;
     --rubin55: #009fa1;
     --rubin60: #058b8c;
@@ -245,7 +246,7 @@ table.docutils td {
 
 body[data-theme="dark"] h1 {
 
-    color: var(--rubin10);
+    color: var(--rubin20);
 
     border-bottom-color: var(--rubin60);
 }
@@ -253,7 +254,7 @@ body[data-theme="dark"] h1 {
 body[data-theme="dark"] h2,
 body[data-theme="dark"] h3 {
 
-    color: var(--rubin70)
+    color: var(--rubin50)
 }
 
 body[data-theme="dark"] .sidebar-brand {
@@ -266,7 +267,7 @@ body[data-theme="dark"] .sidebar-brand {
 
 body[data-theme="dark"] table.docutils th {
 
-    background: var(--rubin80);
+    background: var(--rubin90);
 }
 
 body[data-theme="dark"] .highlight {
@@ -281,5 +282,5 @@ body[data-theme="dark"] .sd-card {
 
 body[data-theme="dark"] .sd-tab-content {
 
-    border-color: #35526b;
+    border-color: var(--rubin85);
 }
