@@ -1,5 +1,6 @@
 setuptools
-sphinx>=8.2
-furo>=2025.7
 sphinx-design
 sphinxcontrib-mermaid
+furo
+sphinx>=7.2
+
