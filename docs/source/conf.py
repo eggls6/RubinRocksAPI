@@ -128,7 +128,7 @@ html_title = project
 
 html_static_path = ["_static"]
 
-html_css_files = ["_static/custom.css"]
+html_css_files = ["custom.css"]
 
 #html_logo = "_static/logo.png"
 
