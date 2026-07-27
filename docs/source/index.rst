@@ -19,7 +19,6 @@ Contents
 --------
 
 .. toctree::
-   index
    api
    about
    acknowledgements

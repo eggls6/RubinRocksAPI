@@ -35,7 +35,8 @@ Estimated probabilities that a given near-Earth Object comes from a particular s
 * residence_time: residence time probability distribution R_NEO (a,e,i),
 * cumulative_residence_time: cumulative residence time.	
 
-The closest database entries corresponding to the orbial element set provided by the user are returned. 
+The query interpolates values for the orbial element set provided by the user. 
+If uncertainties are provided mean and covariance for the above quantities are calculated through Monte Carlo sampling. 
 
 
 References

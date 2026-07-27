@@ -11,7 +11,7 @@ Retrieve dynamical information of a near-Earth Object
 .. http:get:: /source_regions_from_id/
    :noindex:
 
-   Retrieve dynamical information of a near-Earth Object
+   Retrieve dynamical information of a near-Earth Object by Designation
 
    :query designation: (*required*) -- designation of object (as defined in NASA SBDB)
 

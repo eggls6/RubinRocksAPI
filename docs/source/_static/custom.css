@@ -1,159 +1,91 @@
 /* ==========================================================================
-   Rubin-inspired Furo Theme
+   Rubin Rocks Theme for Furo 2025
    ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   Light Theme
-   -------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------
+  Page layout
+---------------------------------------------------------------------------*/
 
 :root {
-
-    /* Layout */
-    --content-width: 980px;
-    --sidebar-width: 290px;
-
-    /* Brand colors */
-    --color-brand-primary: #1565a9;
-    --color-brand-content: #1c7cc7;
-
-    /* Text */
-    --color-foreground-primary: #203040;
-    --color-foreground-secondary: #556575;
-
-    /* Backgrounds */
-    --color-background-primary: #ffffff;
-    --color-background-secondary: #f5f8fb;
-    --color-background-border: #dbe5ef;
-
-    /* Cards */
-    --color-card-background: #fbfcfd;
-    --color-card-border: #d9e2ea;
-
-    /* Admonitions */
-    --color-admonition-background: #f3f8fc;
-
-    /* Code */
-    --color-code-background: #f6f8fa;
-    --color-code-foreground: #213547;
-
-    /* Links */
-    --color-link: var(--color-brand-primary);
-    --color-link-hover: #0f4f88;
+    --content-width: 1100px;
+    --sidebar-width: 300px;
 }
 
-
-/* --------------------------------------------------------------------------
-   Dark Theme
-   -------------------------------------------------------------------------- */
-
-[data-theme="dark"] {
-
-    --color-brand-primary: #58b7ff;
-    --color-brand-content: #7cc8ff;
-
-    --color-foreground-primary: #e6edf5;
-    --color-foreground-secondary: #b4c2cf;
-
-    --color-background-primary: #0e1722;
-    --color-background-secondary: #152331;
-
-    --color-background-border: #26384b;
-
-    --color-card-background: #152331;
-    --color-card-border: #27435f;
-
-    --color-admonition-background: #162736;
-
-    --color-code-background: #111c29;
-    --color-code-foreground: #dbe7f3;
-
-    --color-link: #74c8ff;
-    --color-link-hover: #a8ddff;
-}
-
-
-/* --------------------------------------------------------------------------
-   Typography
-   -------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------
+  Typography
+---------------------------------------------------------------------------*/
 
 body {
 
     font-family:
-        "Inter",
+        Inter,
         "Segoe UI",
-        "Helvetica Neue",
+        Helvetica,
         Arial,
         sans-serif;
 
     font-size: 17px;
-
-    line-height: 1.75;
-
-    letter-spacing: .01em;
+    line-height: 1.7;
 }
+
+/*---------------------------------------------------------------------------
+  Main headings
+---------------------------------------------------------------------------*/
 
 h1 {
 
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #0b2f4a;
+    color: #0f3557;
 
-    border-bottom: 2px solid #dbe5ef;
-    padding-bottom: .35rem;
+    font-size: 2.6rem;
+
+    font-weight: 700;
+
+    border-bottom: 3px solid #1d7fc3;
+
+    padding-bottom: .4rem;
 }
 
 h2 {
 
+    color: #1565a9;
+
+    font-size: 1.9rem;
+
     margin-top: 2.5rem;
-
-    font-size: 1.8rem;
-
-    color: #0f4469;
 }
 
 h3 {
 
-    font-size: 1.35rem;
-
-    color: #1565a9;
+    color: #1878bf;
 }
 
-
-/* Dark headings */
-
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3 {
-
-    color: #9fd8ff;
-}
-
-
-/* --------------------------------------------------------------------------
-   Links
-   -------------------------------------------------------------------------- */
-
-a {
-
-    text-decoration: none;
-    font-weight: 500;
-}
-
-a:hover {
-
-    text-decoration: underline;
-}
-
-
-/* --------------------------------------------------------------------------
-   Sidebar
-   -------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------
+  Sidebar
+---------------------------------------------------------------------------*/
 
 .sidebar-brand {
 
+    font-size: 1.35rem;
+
     font-weight: 700;
 
-    font-size: 1.2rem;
+    color: white;
+
+    background: linear-gradient(
+        180deg,
+        #103b60,
+        #0d2740);
+
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    margin-bottom: 1rem;
+}
+
+.sidebar-brand-text {
+
+    color: white !important;
 }
 
 .sidebar-tree {
@@ -161,54 +93,45 @@ a:hover {
     font-size: .95rem;
 }
 
+/*---------------------------------------------------------------------------
+  Links
+---------------------------------------------------------------------------*/
 
-/* --------------------------------------------------------------------------
-   Tables
-   -------------------------------------------------------------------------- */
+a {
 
-table.docutils {
-
-    border-collapse: collapse;
-
-    font-size: .95rem;
-
-    width: 100%;
+    color: #1976c5;
 }
 
-table.docutils th {
+a:hover {
 
-    background: #0f4469;
-
-    color: white;
-
-    font-weight: 600;
+    color: #0f4f88;
 }
 
-[data-theme="dark"] table.docutils th {
+/*---------------------------------------------------------------------------
+  Search box
+---------------------------------------------------------------------------*/
 
-    background: #214a70;
+.sidebar-search {
+
+    border-radius: 20px;
 }
 
-table.docutils td,
-table.docutils th {
+/*---------------------------------------------------------------------------
+  Code
+---------------------------------------------------------------------------*/
 
-    padding: .6rem .8rem;
+.highlight {
+
+    border: 1px solid #d9e5f2;
+
+    border-radius: 8px;
 }
-
-
-/* --------------------------------------------------------------------------
-   Code blocks
-   -------------------------------------------------------------------------- */
 
 .highlight pre {
 
-    font-size: .92rem;
-
-    border-radius: 8px;
-
-    border: 1px solid var(--color-background-border);
-
     padding: 1rem;
+
+    font-size: .90rem;
 }
 
 code {
@@ -217,75 +140,138 @@ code {
         "JetBrains Mono",
         "Fira Code",
         monospace;
-
-    font-size: .92em;
 }
 
+/*---------------------------------------------------------------------------
+  Tables
+---------------------------------------------------------------------------*/
 
-/* --------------------------------------------------------------------------
-   sphinx-design tabs
-   -------------------------------------------------------------------------- */
+table.docutils {
 
-.sd-tab-set {
+    width: 100%;
 
-    margin-top: 1.5rem;
+    border-collapse: collapse;
+
+    margin: 1rem 0;
 }
 
-.sd-tab-label {
+table.docutils th {
 
-    font-weight: 600;
+    background: #0f3557;
 
-    font-size: .95rem;
+    color: white;
 
-    padding: .6rem 1rem;
+    padding: .7rem;
 }
 
-.sd-tab-content {
+table.docutils td {
 
-    border-radius: 0 0 8px 8px;
+    padding: .7rem;
 
-    padding: 1rem;
+    border-bottom: 1px solid #dfe8f2;
 }
 
-
-/* --------------------------------------------------------------------------
-   sphinx-design cards
-   -------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------
+  sphinx-design cards
+---------------------------------------------------------------------------*/
 
 .sd-card {
 
     border-radius: 10px;
 
-    border: 1px solid var(--color-card-border);
+    border: 1px solid #d6e2ee;
+
+    transition: .2s;
 
     box-shadow: 0 1px 3px rgba(0,0,0,.05);
-
-    transition: .2s ease;
 }
 
 .sd-card:hover {
 
     transform: translateY(-2px);
 
-    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    box-shadow: 0 6px 20px rgba(0,0,0,.08);
 }
 
+/*---------------------------------------------------------------------------
+  sphinx-design tabs
+---------------------------------------------------------------------------*/
 
-/* --------------------------------------------------------------------------
-   Admonitions
-   -------------------------------------------------------------------------- */
+.sd-tab-set {
+
+    margin-top: 1rem;
+}
+
+.sd-tab-label {
+
+    font-weight: 600;
+
+    color: #0f3557;
+
+    padding: .6rem 1rem;
+}
+
+.sd-tab-content {
+
+    border: 1px solid #d6e2ee;
+
+    border-top: none;
+
+    border-radius: 0 0 8px 8px;
+
+    padding: 1rem;
+}
+
+/*---------------------------------------------------------------------------
+  Admonitions
+---------------------------------------------------------------------------*/
 
 .admonition {
 
     border-radius: 8px;
 }
 
+/*---------------------------------------------------------------------------
+  Dark mode
+---------------------------------------------------------------------------*/
 
-/* --------------------------------------------------------------------------
-   Search
-   -------------------------------------------------------------------------- */
+body[data-theme="dark"] h1 {
 
-.sidebar-search-container input {
+    color: #9fd8ff;
 
-    border-radius: 20px;
+    border-bottom-color: #4fa9e8;
+}
+
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3 {
+
+    color: #7bc4ff;
+}
+
+body[data-theme="dark"] .sidebar-brand {
+
+    background: linear-gradient(
+        180deg,
+        #18314d,
+        #101d2d);
+}
+
+body[data-theme="dark"] table.docutils th {
+
+    background: #20496d;
+}
+
+body[data-theme="dark"] .highlight {
+
+    border-color: #30485d;
+}
+
+body[data-theme="dark"] .sd-card {
+
+    border-color: #35526b;
+}
+
+body[data-theme="dark"] .sd-tab-content {
+
+    border-color: #35526b;
 }
