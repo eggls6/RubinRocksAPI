@@ -132,7 +132,7 @@ html_css_files = ["custom.css"]
 
 templates_path = ["_templates"]
 
-#html_logo = "_static/logo.png"
+html_logo = "_static/logonsf.png"
 
 #html_favicon = "_static/favicon.ico"
 
