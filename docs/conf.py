@@ -128,15 +128,11 @@ html_title = project
 
 html_static_path = ["_static"]
 
-html_css_files = [
+html_css_files = ["_static/custom.css"]
 
-    "custom.css",
+#html_logo = "_static/logo.png"
 
-]
-
-html_logo = "_static/logo.png"
-
-html_favicon = "_static/favicon.ico"
+#html_favicon = "_static/favicon.ico"
 
 
 # -----------------------------------------------------------------------------
