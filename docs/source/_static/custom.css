@@ -9,6 +9,14 @@
 :root {
     --content-width: 1100px;
     --sidebar-width: 300px;
+    --rubin10: #d9f7f6;
+    --rubin50: #00babc;
+    --rubin55: #009fa1;
+    --rubin60: #058b8c;
+    --rubin70: #058b8c;
+    --rubin80: #117273;
+    --rubin85: #12726d;
+    --rubin90: #0c4a47;
 }
 
 /*---------------------------------------------------------------------------
@@ -34,20 +42,20 @@ body {
 
 h1 {
 
-    color: #0f3557;
+    color: var(--rubin60);
 
     font-size: 2.6rem;
 
     font-weight: 700;
 
-    border-bottom: 3px solid #1d7fc3;
+    /* border-bottom: 3px solid var(--rubin90); */
 
     padding-bottom: .4rem;
 }
 
 h2 {
 
-    color: #1565a9;
+    color: var(--rubin90);
 
     font-size: 1.9rem;
 
@@ -56,7 +64,7 @@ h2 {
 
 h3 {
 
-    color: #1878bf;
+    color: var(--rubin50);
 }
 
 /*---------------------------------------------------------------------------
@@ -73,8 +81,8 @@ h3 {
 
     background: linear-gradient(
         180deg,
-        #103b60,
-        #0d2740);
+        var(--rubin60),
+        var(--rubin90));
 
     padding: 1rem;
 
@@ -99,12 +107,12 @@ h3 {
 
 a {
 
-    color: #1976c5;
+    color: var(--rubin50);
 }
 
 a:hover {
 
-    color: #0f4f88;
+    color: var(--rubin90);
 }
 
 /*---------------------------------------------------------------------------
@@ -122,7 +130,7 @@ a:hover {
 
 .highlight {
 
-    border: 1px solid #d9e5f2;
+    border: 1px solid var(--rubin10);
 
     border-radius: 8px;
 }
@@ -157,7 +165,7 @@ table.docutils {
 
 table.docutils th {
 
-    background: #0f3557;
+    background: var(--rubin90);
 
     color: white;
 
@@ -168,7 +176,7 @@ table.docutils td {
 
     padding: .7rem;
 
-    border-bottom: 1px solid #dfe8f2;
+    border-bottom: 1px solid var(--rubin10);
 }
 
 /*---------------------------------------------------------------------------
@@ -179,7 +187,7 @@ table.docutils td {
 
     border-radius: 10px;
 
-    border: 1px solid #d6e2ee;
+    border: 1px solid var(--rubin10);
 
     transition: .2s;
 
@@ -206,14 +214,14 @@ table.docutils td {
 
     font-weight: 600;
 
-    color: #0f3557;
+    color: var(--rubin90);
 
     padding: .6rem 1rem;
 }
 
 .sd-tab-content {
 
-    border: 1px solid #d6e2ee;
+    border: 1px solid var(--rubin60);
 
     border-top: none;
 
@@ -237,38 +245,38 @@ table.docutils td {
 
 body[data-theme="dark"] h1 {
 
-    color: #9fd8ff;
+    color: var(--rubin10);
 
-    border-bottom-color: #4fa9e8;
+    border-bottom-color: var(--rubin60);
 }
 
 body[data-theme="dark"] h2,
 body[data-theme="dark"] h3 {
 
-    color: #7bc4ff;
+    color: var(--rubin70)
 }
 
 body[data-theme="dark"] .sidebar-brand {
 
     background: linear-gradient(
         180deg,
-        #18314d,
-        #101d2d);
+        var(--rubin70),
+        var(--rubin90);
 }
 
 body[data-theme="dark"] table.docutils th {
 
-    background: #20496d;
+    background: var(--rubin80);
 }
 
 body[data-theme="dark"] .highlight {
 
-    border-color: #30485d;
+    border-color: var(--rubin60);
 }
 
 body[data-theme="dark"] .sd-card {
 
-    border-color: #35526b;
+    border-color: var(--rubin60);
 }
 
 body[data-theme="dark"] .sd-tab-content {
