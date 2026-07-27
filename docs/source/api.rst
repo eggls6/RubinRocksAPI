@@ -65,7 +65,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit
 
 
 **Example Request**
-    .. tabs::
+    .. tab-set::
 
         .. tab-item:: Browser
             
@@ -121,7 +121,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Uncertainty
 
 
 **Example Request**
-    .. tabs::
+    .. tab-set::
 
         .. tab-item:: Browser 
 
@@ -177,7 +177,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Covariance
    :query cov: (*required*) -- 3 x 3 Covariance matrix in a, e, i
 
 **Example Request**
-    .. tabs::
+    .. tab-set::
 
         .. tab-item:: Browser
             
@@ -231,7 +231,7 @@ Retrieve a slice of data from a near-Earth object model
     :query output: (*required*) -- Orientation of JSON output (‘split’, ‘records’, ‘index’, ‘columns’, ‘values’, ‘table’)
 
 **Example Request**
-    .. tabs::
+    .. tab-set::
         .. tab-item:: Browser 
             
             .. code-block:: html
