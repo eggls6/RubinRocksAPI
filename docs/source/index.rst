@@ -24,27 +24,3 @@ Contents
    about
    acknowledgements
 
-.. Acknowledgements
-.. ----------------
-.. This effort is a collaboration between the University of Illinois Urbana-Champaign (UIUC), the New York University Abu-Dhabi (NYUAD) and the University of Vienna (Univie).
-.. If you found this resource useful, please add the following text to your acknowledgements:
-
-
-.. "This project has made use of ExoStab 2.0, an online service jointly developed by the University of Illinos at Urbana-Champaign, the New York University Abu Dhabi and the University of Vienna."
-
-
-
-.. .. image:: _images/UIUC_logo.png
-..     :width: 200
-..     :alt: University of Illinois Urbana-Champaign logo
-
-.. .. image:: _images/nyuad_logo.png
-..   :width: 200
-..   :alt: NYUAD logo
-
-.. .. image:: _images/UniWien_logo.png
-..   :width: 200
-..   :alt: Univie logo
-
-
-.. We would also like to acknowledge Michelle Dadighat (NSF NOIRLab) for her insights into API optimization and deployment.

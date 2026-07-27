@@ -17,14 +17,14 @@ Retrieve dynamical information of a near-Earth Object
     .. tabs::
 
         .. tab:: Browser
-            `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_from_id/?designation=2026%20AB1`_
+            `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_from_id/?designation=2026%20AB1 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_from_id/?designation=2026%20AB1>`_
 
         .. code-tab:: python
 
             import requests
             import json
 
-            url = 'http://apexgroup.web.illinois.edu/rubinrocks/source_regions_from_id/;'
+            url = 'http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_from_id/;'
             params = {      'designation': '2026 AB1'
                             }
             r = requests.get(url, params=params)
@@ -47,7 +47,7 @@ Retrieve dynamical information of a near-Earth Object
 Retrieve dynamical information of a near-Earth Object by Orbit 
 --------------------------------------------------------------
 
-.. http:get:: /residencetime/
+.. http:get:: /source_regions/
    :noindex:
 
    Retrieve dynamical information of a near-Earth Object
@@ -61,14 +61,14 @@ Retrieve dynamical information of a near-Earth Object by Orbit
     .. tabs::
 
         .. tab:: Browser
-            `http://apexgroup.web.illinois.edu/rubinrocks/residencetime/?a=2.5&e=0.6&i=45 <http://apexgroup.web.illinois.edu/rubinrocks/residencetime/?a=2.5&e=0.6&i=45>`_
+            `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45>`_
 
         .. code-tab:: python
 
             import requests
             import json
 
-            url = 'http://apexgroup.web.illinois.edu/rubinrocks/residencetime/;'
+            url = 'http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/;'
             params = {      'a': 2.5,
                             'e': 0.6,
                             'i': 45
@@ -78,7 +78,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit
 
         .. code-tab:: bash
 
-            curl -X GET "http://apexgroup.web.illinois.edu/rubinrocks/residencetime/?a=2.5&e=0.6&i=45" -H "accept: application/json"
+            curl -X GET "http://apexgroup.web.illinois.edu/rubinrocks2/residencetime/?a=2.5&e=0.6&i=45" -H "accept: application/json"
 
 
 **Example Response**
@@ -86,14 +86,14 @@ Retrieve dynamical information of a near-Earth Object by Orbit
 .. sourcecode:: json
 
     [
-        {"author":"Rubin Rocks","data":[{"IMC":0.17557,"JFC":0.0,"MMR3to1":0.6331,"OMB":0.09221,"a":2.5,"cumulative_residence_time":0.8290172612,"e":0.6,"i":45.0,"nu6":0.09912,"residence_time":1.31163e-05}]}
+     {"author":"Rubin Rocks","data":{"units":{"IMC":"","JFC":"","MMR3to1":"","OMB":"","a":"au","cumulative_residence_time":"","e":"","i":"deg","nu6":"","residence_time":""},"values":{"IMC":0.1670546396,"JFC":0.0,"MMR3to1":0.6602536172,"OMB":0.0676440411,"a":2.5,"cumulative_residence_time":0.8165048718,"e":0.6,"i":45.0,"nu6":0.1050466508,"residence_time":1.23651e-05}}}
     ]
 
 
 Retrieve dynamical information of a near-Earth Object by Orbit with Uncertainty
 -------------------------------------------------------------------------------
 
-.. http:get:: /source_regions/
+.. http:get:: /source_regions_sigma/
    :noindex:
 
    Retrieve dynamical information of a near-Earth Object
@@ -110,14 +110,14 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Uncertainty
     .. tabs::
 
         .. tab:: Browser
-            `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2`_
+            `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_sigma/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_sigma/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2>`_
 
         .. code-tab:: python
 
             import requests
             import json
 
-            url = 'http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/;'
+            url = 'http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_sigma/;'
             params = {      'a': 2.5,
                             'e': 0.6,
                             'i': 45,
@@ -130,7 +130,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Uncertainty
 
         .. code-tab:: bash
 
-            curl -X GET "http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2" -H "accept: application/json"
+            curl -X GET "http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_sigma/?a=2.5&e=0.6&i=45&siga=0.1&sige=0.1&sigi=2" -H "accept: application/json"
 
 
 **Example Response**
@@ -159,14 +159,14 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Covariance
     .. tabs::
 
         .. tab:: Browser
-            `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1`_
+            `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1 <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1>`_
 
         .. code-tab:: python
 
             import requests
             import json
 
-            url = 'http://apexgroup.web.illinois.edu/rubinrocks2/_covariance/;'
+            url = 'http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/;'
             params = {      'a': 2.5,
                             'e': 0.6,
                             'i': 45,
@@ -177,7 +177,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Covariance
 
         .. code-tab:: bash
 
-            curl -X GET "http://apexgroup.web.illinois.edu/rubinrocks2/source_regions/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1" -H "accept: application/json"
+            curl -X GET "http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_covariance/?a=2.5&e=0.6&i=45&cov=0.2,0.1,0.4,0.1,0.1,0.2,0.4,0.2,1" -H "accept: application/json"
 
 
 **Example Response**
@@ -192,7 +192,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Covariance
 Retrieve a slice of data from a near-Earth object model
 -------------------------------------------------------
 
-.. http:get:: /residencetimeslice/
+.. http:get:: /source_regions_slice/
     :noindex:
 
     Return gridpoints of a slice through the NEO model for a constant semimajor axis, eccentricity or inclination 
@@ -206,14 +206,14 @@ Retrieve a slice of data from a near-Earth object model
 **Example Request**
     .. tabs::
         .. tab:: Browser
-            `https://apexgroup.web.illinois.edu/rubinrocks/residencetimeslice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table <https://apexgroup.web.illinois.edu/rubinrocks/residencetimeslice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table>`_
+            `http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_slice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table <http://apexgroup.web.illinois.edu/rubinrocks2/source_regions_slice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table>`_
 
         .. code-tab:: python
 
             import requests
             import json
 
-            url = 'https://apexgroup.web.illinois.edu/rubinrocks/residencetimeslice/'
+            url = 'https://apexgroup.web.illinois.edu/rubinrocks2/source_regions_slice/'
               params = {    'a': 1.5,
                             'e': 0.5,
                             'i': 25,
@@ -225,7 +225,7 @@ Retrieve a slice of data from a near-Earth object model
 
         .. code-tab:: bash
 
-            curl -X GET "https://apexgroup.web.illinois.edu/rubinrocks/residencetimeslice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table" -H "accept: application/json"
+            curl -X GET "https://apexgroup.web.illinois.edu/rubinrocks2/source_regions_slice/?a=1.5&e=0.5&i=25&slicevariable=i&output=table" -H "accept: application/json"
 
 
 **Example Response**
