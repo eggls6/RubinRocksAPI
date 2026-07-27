@@ -44,8 +44,6 @@ extensions = [
 
     # Third-party
 
-    "sphinx_design",
-
     "sphinxcontrib.mermaid",
 
     "sphinx_code_tabs",
