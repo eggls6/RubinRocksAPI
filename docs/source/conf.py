@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'Rubin Rocks'
-copyright = '2024 UIUC'
-author = 'Samuel Cornwall, Siegfried Eggl, Sarah Greenstreet'
+copyright = '2026 UIUC'
+author = 'Samuel Cornwall, Siegfried Eggl, Sarah Greenstreet, Dmitrii Vavilov'
 
-release = '0.1'
-version = '0.1.0'
+release = '0.2'
+version = '0.1.1'
 
 # -- General configuration
 
