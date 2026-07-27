@@ -23,151 +23,179 @@ version = '0.1.1'
 # -- General configuration
 
 extensions = [
-
-    # Built-in
-
-    "sphinx.ext.autodoc",
-
-    "sphinx.ext.autosummary",
-
-    "sphinx.ext.napoleon",
-
-    "sphinx.ext.intersphinx",
-
-    "sphinx.ext.viewcode",
-
-    "sphinx.ext.todo",
-
-    "sphinx.ext.duration",
-
-    "sphinx.ext.coverage",
-
-    # Third-party
-
-    "sphinx_code_tabs",
-
-    "sphinx_tabs.tabs",
-
+    'sphinx_code_tabs',
+    'sphinxcontrib.httpdomain',
+    'sphinx.ext.duration',
+    'sphinx.ext.doctest',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.intersphinx',
+    'sphinx_tabs.tabs'
 ]
-
-templates_path = ["_templates"]
-
-exclude_patterns = [
-
-    "_build",
-
-    "Thumbs.db",
-
-    ".DS_Store",
-
-]
-
-source_suffix = {
-
-    ".rst": "restructuredtext",
-
-}
-
-master_doc = "index"
-
-language = "en"
-
-# -----------------------------------------------------------------------------
-
-# Autodoc
-
-# -----------------------------------------------------------------------------
-
-autosummary_generate = True
-
-autoclass_content = "both"
-
-autodoc_default_options = {
-
-    "members": True,
-
-    "undoc-members": False,
-
-    "show-inheritance": True,
-
-}
-
-autodoc_typehints = "description"
-
-# -----------------------------------------------------------------------------
-
-# Napoleon (Google / NumPy docstrings)
-
-# -----------------------------------------------------------------------------
-
-napoleon_google_docstring = True
-
-napoleon_numpy_docstring = True
-
-# -----------------------------------------------------------------------------
-
-# Intersphinx
-
-# -----------------------------------------------------------------------------
 
 intersphinx_mapping = {
-
-    "python": ("https://docs.python.org/3", None),
-
-    "numpy": ("https://numpy.org/doc/stable/", None),
-
+    'python': ('https://docs.python.org/3/', None),
+    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
+intersphinx_disabled_domains = ['std']
 
-# -----------------------------------------------------------------------------
+templates_path = ['_templates']
 
-# TODOs
+# -- Options for HTML output
 
-# -----------------------------------------------------------------------------
+html_theme = 'sphinx_rtd_theme'
 
-todo_include_todos = False
-
-# -----------------------------------------------------------------------------
-
-# HTML output
-
-# -----------------------------------------------------------------------------
-
-html_theme = "furo"
-
-html_title = project
-
-html_static_path = ["_static"]
-
-html_css_files = [
-
-    "custom.css",
-
-]
-
-html_logo = "_static/logo.png"
-
-html_favicon = "_static/favicon.ico"
+# -- Options for EPUB output
+epub_show_urls = 'footnote'
 
 
-# -----------------------------------------------------------------------------
 
-# GitHub links
+# extensions = [
 
-# -----------------------------------------------------------------------------
+#     # Built-in
 
-html_context = {
+#     "sphinx.ext.autodoc",
 
-    "display_github": True,
+#     "sphinx.ext.autosummary",
 
-    "github_user": "eggls6",
+#     "sphinx.ext.napoleon",
 
-    "github_repo": "RubinRocksAPI",
+#     "sphinx.ext.intersphinx",
 
-    "github_version": "main",
+#     "sphinx.ext.viewcode",
 
-    "conf_py_path": "/docs/",
+#     "sphinx.ext.todo",
 
-}
+#     "sphinx.ext.duration",
+
+#     "sphinx.ext.coverage",
+
+#     # Third-party
+
+#     "sphinx_code_tabs",
+
+#     "sphinx_tabs.tabs",
+
+# ]
+
+# templates_path = ["_templates"]
+
+# exclude_patterns = [
+
+#     "_build",
+
+#     "Thumbs.db",
+
+#     ".DS_Store",
+
+# ]
+
+# source_suffix = {
+
+#     ".rst": "restructuredtext",
+
+# }
+
+# master_doc = "index"
+
+# language = "en"
+
+# # -----------------------------------------------------------------------------
+
+# # Autodoc
+
+# # -----------------------------------------------------------------------------
+
+# autosummary_generate = True
+
+# autoclass_content = "both"
+
+# autodoc_default_options = {
+
+#     "members": True,
+
+#     "undoc-members": False,
+
+#     "show-inheritance": True,
+
+# }
+
+# autodoc_typehints = "description"
+
+# # -----------------------------------------------------------------------------
+
+# # Napoleon (Google / NumPy docstrings)
+
+# # -----------------------------------------------------------------------------
+
+# napoleon_google_docstring = True
+
+# napoleon_numpy_docstring = True
+
+# # -----------------------------------------------------------------------------
+
+# # Intersphinx
+
+# # -----------------------------------------------------------------------------
+
+# intersphinx_mapping = {
+
+#     "python": ("https://docs.python.org/3", None),
+
+#     "numpy": ("https://numpy.org/doc/stable/", None),
+
+# }
+
+# # -----------------------------------------------------------------------------
+
+# # TODOs
+
+# # -----------------------------------------------------------------------------
+
+# todo_include_todos = False
+
+# # -----------------------------------------------------------------------------
+
+# # HTML output
+
+# # -----------------------------------------------------------------------------
+
+# html_theme = "furo"
+
+# html_title = project
+
+# html_static_path = ["_static"]
+
+# html_css_files = [
+
+#     "custom.css",
+
+# ]
+
+# html_logo = "_static/logo.png"
+
+# html_favicon = "_static/favicon.ico"
+
+
+# # -----------------------------------------------------------------------------
+
+# # GitHub links
+
+# # -----------------------------------------------------------------------------
+
+# html_context = {
+
+#     "display_github": True,
+
+#     "github_user": "eggls6",
+
+#     "github_repo": "RubinRocksAPI",
+
+#     "github_version": "main",
+
+#     "conf_py_path": "/docs/",
+
+# }
 
 # -----------------------------------------------------------------------------
 
