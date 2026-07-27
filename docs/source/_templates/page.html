@@ -1,0 +1,106 @@
+{% extends "!page.html" %}
+
+{% block body %}
+
+{% if pagename == "index" %}
+
+<div class="landing">
+
+  <video class="landing-video"
+
+         autoplay
+
+         muted
+
+         loop
+
+         playsinline>
+
+      <source src="{{ pathto('_static/hero.mp4', 1) }}"
+
+              type="video/mp4">
+
+  </video>
+
+  <div class="landing-overlay"></div>
+
+  <div class="landing-content">
+
+      <h1>Rubin Rocks</h1>
+
+      <p>
+
+          Exploring the dynamical histories
+
+          of near-Earth Objects
+
+      </p>
+
+      <a href="#documentation"
+
+         class="landing-button">
+
+         Documentation
+
+      </a>
+
+  </div>
+
+</div>
+
+<div id="documentation">
+
+{{ super() }}
+
+</div>
+
+{% else %}
+
+<div id="documentation">
+
+{{ super() }}
+
+</div>
+
+
+<script>
+
+document.querySelector(".landing-button")
+
+.addEventListener("click",function(e){
+
+    e.preventDefault();
+
+    document
+
+        .querySelector("#documentation")
+
+        .scrollIntoView({
+
+            behavior:"smooth"
+
+        });
+
+});
+
+
+window.addEventListener("scroll",function(){
+
+    const show = window.scrollY > window.innerHeight*0.7;
+
+    document.querySelector(".sidebar-drawer")
+
+        .style.opacity = show ? 1 : 0;
+
+    document.querySelector(".toc-drawer")
+
+        .style.opacity = show ? 1 : 0;
+
+    document.querySelector(".mobile-header")
+
+        .style.opacity = show ? 1 : 0;
+
+});
+</script>
+
+{% endblock %}

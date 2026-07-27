@@ -293,7 +293,7 @@ body[data-theme="dark"] .sd-tab-content {
 
    =========================================================== */
 
-body[data-page="index"] .sidebar-drawer {
+/* body[data-page="index"] .sidebar-drawer {
 
     display: none;
 
@@ -309,7 +309,211 @@ body[data-page="index"] .mobile-header {
 
     display: none;
 
+} */
+
+
+/* ============================================================
+
+   Landing page
+
+   ============================================================ */
+
+.landing{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
 }
+
+/* ------------------------------------------------ */
+
+.landing-video{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-2;
+
+}
+
+/* ------------------------------------------------ */
+
+.landing-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            rgba(5,20,40,.45),
+
+            rgba(5,20,40,.70)
+
+        );
+
+    z-index:-1;
+
+}
+
+/* ------------------------------------------------ */
+
+.landing-content{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+/* ------------------------------------------------ */
+
+.landing-content h1{
+
+    font-size:clamp(4rem,8vw,7rem);
+
+    color:#58B7FF;
+
+    font-weight:700;
+
+    border:none;
+
+    margin-bottom:.3em;
+
+    opacity:0;
+
+    animation:fadeIn 1.8s forwards;
+
+}
+
+/* ------------------------------------------------ */
+
+.landing-content p{
+
+    font-size:1.8rem;
+
+    font-weight:300;
+
+    opacity:0;
+
+    animation:fadeIn 2s .8s forwards;
+
+}
+
+/* ------------------------------------------------ */
+
+.landing-button{
+
+    display:inline-block;
+
+    margin-top:3rem;
+
+    padding:1rem 2.5rem;
+
+    border:2px solid white;
+
+    border-radius:40px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    opacity:0;
+
+    animation:fadeIn 2s 1.6s forwards;
+
+    transition:.3s;
+
+}
+
+.landing-button:hover{
+
+    background:white;
+
+    color:#103b60;
+
+}
+
+/* ------------------------------------------------ */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+/* ------------------------------------------------ */
+
+/* Hide Furo article until after the hero           */
+
+/* ------------------------------------------------ */
+
+#documentation{
+
+    background:white;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+/* ------------------------------------------------ */
+
+/* Hide sidebar while hero is visible               */
+
+/* ------------------------------------------------ */
+
+.sidebar-drawer,
+
+.toc-drawer,
+
+.mobile-header{
+
+    opacity:0;
+
+    transition:.5s;
+
+}
+
+
+
 
 /* ===========================================================
 
