@@ -36,7 +36,7 @@ Estimated probabilities that a given near-Earth Object comes from a particular s
 * cumulative_residence_time: cumulative residence time.	
 
 The query interpolates values for the orbial element set provided by the user. 
-If uncertainties are provided mean and covariance for the above quantities are calculated through Monte Carlo sampling. 
+If uncertainties are provided mean and covariance for the above quantities are calculated through Monte Carlo sampling. Please note, that those statistics do not account for potential model bias. 
 
 
 References

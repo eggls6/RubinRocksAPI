@@ -1,4 +1,34 @@
-Welcome to Rubin Rocks API Documentation
+.. raw:: html
+
+   <section class="hero">
+
+     <video autoplay muted loop playsinline class="hero-video">
+
+       <source src="_static/hero.mp4" type="video/mp4">
+
+     </video>
+
+     <div class="hero-overlay"></div>
+
+     <div class="hero-content">
+
+       <h1>Rubin Rocks</h1>
+
+       <p>
+
+       Exploring dynamical histories of near-Earth Objects.
+
+       </p>
+
+       <a class="hero-button" href="api.html">
+
+          Get Started
+
+       </a>
+
+     </div>
+
+Welcome to Rubin Rocks
 ========================================
 
 **Rubin Rocks**  is an online service intended to simplify the analysis of dynamical properties of near-Earth asteroids.

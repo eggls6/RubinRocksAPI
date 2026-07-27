@@ -20,6 +20,8 @@
     --rubin90: #0c4a47;
 }
 
+
+
 /*---------------------------------------------------------------------------
   Typography
 ---------------------------------------------------------------------------*/
@@ -56,7 +58,7 @@ h1 {
 
 h2 {
 
-    color: var(--rubin90);
+    color: var(--rubin60);
 
     font-size: 1.9rem;
 
@@ -65,7 +67,7 @@ h2 {
 
 h3 {
 
-    color: var(--rubin50);
+    color: var(--rubin60);
 }
 
 /*---------------------------------------------------------------------------
@@ -131,7 +133,7 @@ a:hover {
 
 .highlight {
 
-    border: 1px solid var(--rubin10);
+    border: 1px solid var(--rubin20);
 
     border-radius: 8px;
 }
@@ -246,7 +248,7 @@ table.docutils td {
 
 body[data-theme="dark"] h1 {
 
-    color: var(--rubin20);
+    color: var(--rubin50);
 
     border-bottom-color: var(--rubin60);
 }
@@ -272,7 +274,7 @@ body[data-theme="dark"] table.docutils th {
 
 body[data-theme="dark"] .highlight {
 
-    border-color: var(--rubin60);
+    border-color: var(--rubin20);
 }
 
 body[data-theme="dark"] .sd-card {
@@ -283,4 +285,147 @@ body[data-theme="dark"] .sd-card {
 body[data-theme="dark"] .sd-tab-content {
 
     border-color: var(--rubin85);
+}
+
+
+/* ===========================================================
+
+   HERO
+
+   =========================================================== */
+
+.hero {
+
+    position: relative;
+
+    height: 100vh;
+
+    margin: -2rem;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.hero-video {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -2;
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+
+            rgba(5,20,40,.45),
+
+            rgba(5,20,40,.65));
+
+    z-index: -1;
+
+}
+
+.hero-content {
+
+    text-align: center;
+
+    color: white;
+
+    padding: 2rem;
+
+    max-width: 900px;
+
+}
+
+.hero-content h1 {
+
+    font-size: clamp(4rem,9vw,7rem);
+
+    margin-bottom: .3em;
+
+    font-weight: 800;
+
+    color: #42a5f5;
+
+    text-shadow:
+
+        0 0 20px rgba(0,100,255,.35),
+
+        0 0 40px rgba(0,0,0,.6);
+
+    border: none;
+
+}
+
+.hero-content p {
+
+    font-size: 1.8rem;
+
+    color: white;
+
+    margin-bottom: 2rem;
+
+    font-weight: 300;
+
+}
+
+.hero-button {
+
+    display: inline-block;
+
+    background: #1565c0;
+
+    color: white;
+
+    padding: .9rem 2rem;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .2s;
+
+}
+
+.hero-button:hover {
+
+    background: #42a5f5;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+article h1:first-child {
+
+    display: none;
+
+}
+
+body[data-page="index"] .toc-drawer {
+
+    display: none;
+
 }

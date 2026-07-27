@@ -5,8 +5,9 @@ Rubin Rocks API
 This page contains a list of various Rubin Rocks API endpoints that can be used to extract dynamical information for near-Earth objects.
 The API endpoints simply follow the main URL `http://apexgroup.web.illinois.edu/rubinrocks2 <http://apexgroup.web.illinois.edu/rubinrocks2>`_ .
 
-Retrieve dynamical information of a near-Earth Object
------------------------------------------------------
+Retrieve dynamical information of a near-Earth Object by Name
+-------------------------------------------------------------
+This API endpoint provides dynamical histories of objects by name or designation. The names and orbits are resolved through `NASA's Small-Body Database (SBDB) <https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/>`_ . 
 
 .. http:get:: /source_regions_from_id/
    :noindex:
@@ -70,6 +71,7 @@ Retrieve dynamical information of a near-Earth Object
 
 Retrieve dynamical information of a near-Earth Object by Orbit 
 --------------------------------------------------------------
+This API endpoint provides dynamical histories of objects by requesting orbital elements semimajor axis (a), eccentricity (e) and inclination(i) as input.  
 
 .. http:get:: /source_regions/
    :noindex:
@@ -124,6 +126,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit
 
 Retrieve dynamical information of a near-Earth Object by Orbit with Uncertainty
 -------------------------------------------------------------------------------
+This API endpoint provides dynamical histories of objects by requesting orbital elements semimajor axis (a), eccentricity (e) and inclination(i) as input. Uncertainties for the orbital elements can also be provided.  
 
 .. http:get:: /source_regions_sigma/
    :noindex:
@@ -187,6 +190,8 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Uncertainty
 
 Retrieve dynamical information of a near-Earth Object by Orbit with Covariance
 -------------------------------------------------------------------------------
+This API endpoint provides dynamical histories of objects by requesting orbital elements semimajor axis (a), eccentricity (e) and inclination(i) as input. 
+Full covariances for the orbital elements can also be provided.  
 
 .. http:get:: /source_regions_covariance/
    :noindex:
@@ -239,6 +244,7 @@ Retrieve dynamical information of a near-Earth Object by Orbit with Covariance
 
 Retrieve a slice of data from a near-Earth object model
 -------------------------------------------------------
+A slice of the model data can be requested along holding one orbital element fixed.
 
 .. http:get:: /source_regions_slice/
     :noindex:
