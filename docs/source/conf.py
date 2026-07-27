@@ -23,179 +23,152 @@ version = '0.1.1'
 # -- General configuration
 
 extensions = [
-    'sphinx_code_tabs',
-    'sphinxcontrib.httpdomain',
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-    'sphinx_tabs.tabs'
+
+    # Built-in
+
+    "sphinx.ext.autodoc",
+
+    "sphinx.ext.autosummary",
+
+    "sphinx.ext.napoleon",
+
+    "sphinx.ext.intersphinx",
+
+    "sphinx.ext.viewcode",
+
+    "sphinx.ext.todo",
+
+    "sphinx.ext.duration",
+
+    "sphinx.ext.coverage",
+
+    # Third-party
+
+    "sphinx_copybutton",
+
+    "sphinx_design",
+
+    "sphinxcontrib.mermaid",
 ]
 
-intersphinx_mapping = {
-    'python': ('https://docs.python.org/3/', None),
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+templates_path = ["_templates"]
+
+exclude_patterns = [
+
+    "_build",
+
+    "Thumbs.db",
+
+    ".DS_Store",
+
+]
+
+source_suffix = {
+
+    ".rst": "restructuredtext",
+
 }
-intersphinx_disabled_domains = ['std']
 
-templates_path = ['_templates']
+master_doc = "index"
 
-# -- Options for HTML output
+language = "en"
 
-html_theme = 'sphinx_rtd_theme'
+# -----------------------------------------------------------------------------
 
-# -- Options for EPUB output
-epub_show_urls = 'footnote'
+# Autodoc
 
+# -----------------------------------------------------------------------------
 
+autosummary_generate = True
 
-# extensions = [
+autoclass_content = "both"
 
-#     # Built-in
+autodoc_default_options = {
 
-#     "sphinx.ext.autodoc",
+    "members": True,
 
-#     "sphinx.ext.autosummary",
+    "undoc-members": False,
 
-#     "sphinx.ext.napoleon",
+    "show-inheritance": True,
 
-#     "sphinx.ext.intersphinx",
+}
 
-#     "sphinx.ext.viewcode",
+autodoc_typehints = "description"
 
-#     "sphinx.ext.todo",
+# -----------------------------------------------------------------------------
 
-#     "sphinx.ext.duration",
+# Napoleon (Google / NumPy docstrings)
 
-#     "sphinx.ext.coverage",
+# -----------------------------------------------------------------------------
 
-#     # Third-party
+napoleon_google_docstring = True
 
-#     "sphinx_code_tabs",
+napoleon_numpy_docstring = True
 
-#     "sphinx_tabs.tabs",
+# -----------------------------------------------------------------------------
 
-# ]
+# Intersphinx
 
-# templates_path = ["_templates"]
+# -----------------------------------------------------------------------------
 
-# exclude_patterns = [
+intersphinx_mapping = {
 
-#     "_build",
+    "python": ("https://docs.python.org/3", None),
 
-#     "Thumbs.db",
+    "numpy": ("https://numpy.org/doc/stable/", None),
 
-#     ".DS_Store",
+}
 
-# ]
+# -----------------------------------------------------------------------------
 
-# source_suffix = {
+# TODOs
 
-#     ".rst": "restructuredtext",
+# -----------------------------------------------------------------------------
 
-# }
+todo_include_todos = False
 
-# master_doc = "index"
+# -----------------------------------------------------------------------------
 
-# language = "en"
+# HTML output
 
-# # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# # Autodoc
+html_theme = "furo"
 
-# # -----------------------------------------------------------------------------
+html_title = project
 
-# autosummary_generate = True
+html_static_path = ["_static"]
 
-# autoclass_content = "both"
+html_css_files = [
 
-# autodoc_default_options = {
+    "custom.css",
 
-#     "members": True,
+]
 
-#     "undoc-members": False,
+html_logo = "_static/logo.png"
 
-#     "show-inheritance": True,
+html_favicon = "_static/favicon.ico"
 
-# }
 
-# autodoc_typehints = "description"
+# -----------------------------------------------------------------------------
 
-# # -----------------------------------------------------------------------------
+# GitHub links
 
-# # Napoleon (Google / NumPy docstrings)
+# -----------------------------------------------------------------------------
 
-# # -----------------------------------------------------------------------------
+html_context = {
 
-# napoleon_google_docstring = True
+    "display_github": True,
 
-# napoleon_numpy_docstring = True
+    "github_user": "eggls6",
 
-# # -----------------------------------------------------------------------------
+    "github_repo": "RubinRocksAPI",
 
-# # Intersphinx
+    "github_version": "main",
 
-# # -----------------------------------------------------------------------------
+    "conf_py_path": "/docs/",
 
-# intersphinx_mapping = {
-
-#     "python": ("https://docs.python.org/3", None),
-
-#     "numpy": ("https://numpy.org/doc/stable/", None),
-
-# }
-
-# # -----------------------------------------------------------------------------
-
-# # TODOs
-
-# # -----------------------------------------------------------------------------
-
-# todo_include_todos = False
-
-# # -----------------------------------------------------------------------------
-
-# # HTML output
-
-# # -----------------------------------------------------------------------------
-
-# html_theme = "furo"
-
-# html_title = project
-
-# html_static_path = ["_static"]
-
-# html_css_files = [
-
-#     "custom.css",
-
-# ]
-
-# html_logo = "_static/logo.png"
-
-# html_favicon = "_static/favicon.ico"
-
-
-# # -----------------------------------------------------------------------------
-
-# # GitHub links
-
-# # -----------------------------------------------------------------------------
-
-# html_context = {
-
-#     "display_github": True,
-
-#     "github_user": "eggls6",
-
-#     "github_repo": "RubinRocksAPI",
-
-#     "github_version": "main",
-
-#     "conf_py_path": "/docs/",
-
-# }
+}
 
 # -----------------------------------------------------------------------------
 
@@ -203,9 +176,9 @@ epub_show_urls = 'footnote'
 
 # -----------------------------------------------------------------------------
 
-# copybutton_prompt_text = r">>> |\.\.\. |\$ "
+copybutton_prompt_text = r">>> |\.\.\. |\$ "
 
-# copybutton_prompt_is_regexp = True
+copybutton_prompt_is_regexp = True
 
 # -----------------------------------------------------------------------------
 
@@ -213,7 +186,7 @@ epub_show_urls = 'footnote'
 
 # -----------------------------------------------------------------------------
 
-# mermaid_version = "11.0.0"
+mermaid_version = "11.0.0"
 
 # -----------------------------------------------------------------------------
 
