@@ -104,6 +104,37 @@ h3 {
     font-size: .95rem;
 }
 
+.sidebar-logo {
+
+    width: 180px;
+
+    height: auto;
+
+}
+
+.sidebar-tree a {
+
+    font-size: 1.02rem;
+
+    font-weight: 500;
+
+    color: var(--rubin80);
+
+    letter-spacing: .02em;
+}
+
+.sidebar-tree a:hover {
+
+    font-size: 1.02rem;
+
+    font-weight: 500;
+
+    color: var(--rubin60);
+
+    letter-spacing: .02em;
+
+}
+
 /*---------------------------------------------------------------------------
   Links
 ---------------------------------------------------------------------------*/
@@ -119,15 +150,6 @@ a:hover {
 }
 
 
-a.reference.internal {
-
-    color: var(--rubin80);
-}
-
-a.reference.internal:hover {
-
-    color: var(--rubin60);
-}
 /*---------------------------------------------------------------------------
   Search box
 ---------------------------------------------------------------------------*/
@@ -136,6 +158,8 @@ a.reference.internal:hover {
 
     border-radius: 20px;
 }
+
+
 
 /*---------------------------------------------------------------------------
   Code
